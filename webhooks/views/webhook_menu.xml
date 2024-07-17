@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_webhook" name="Webhooks" sequence="100" groups="webhooks.group_webhook_user" parent="base.menu_custom"/>
+
+        <menuitem id="menu_webhook_webhook" name="Webhooks" parent="menu_webhook" action="webhook_webhook_act" sequence="1"/>
+
+        <menuitem id="menu_webhook_job" name="Jobs" parent="menu_webhook" action="action_webhook_job" sequence="2"/>
+
+    </data>
+</odoo>

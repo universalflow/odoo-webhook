@@ -1,0 +1,828 @@
+<!-- Product name -->
+<section class="oe_container">
+    <div class="row o_equal_col_sm" style="max-width:1540px; margin:0 auto; background-color:#3e3f43; padding-bottom:92px; border-radius:15px">
+        <div class="" style="display:block; margin:0 auto; max-width:330px; width:80%"><span style="width:100%; display:inline-block"> <h3 class="oe_slogan" style="color:white; font-family:Montserrat; font-weight:700; text-align:center; text-transform:uppercase; opacity:1; font-size:24px; margin-bottom:18px; margin-top:18px">Odoo Webhook</h3></span>
+        </div>
+    </div>
+</section>
+
+<!-- Product description -->
+<section class="oe_container bg-transparent fixed-top d-flex justify-content-center position-relative z-index-0" style="
+    margin-top: -5rem;border-radius: 15px;">
+    <div class="o_equal_col_sm col-sm-10">
+        <div class="shadow-sm bg-white pb32 pt32 px-5" style="border-radius:15px">
+            <p class="oe_slogan" style="font-family: Roboto;font-weight: 300;color: #444549;background: white;font-size: 16px;">
+                Webhooks(A user-defined HTTP callbacks) allow you to subscribe to certain events that happen in odoo. When one of these events are triggered odoo will send a HTTP POST payload to the webhook's configured URL.<br/>
+                The RESTful API accesses Odoo using standard HTTP GET, PUT, POST, and DELETE methods and a simple JSON input and output format. <br/>
+                It uses both the <a href="http://odoo-restapi.readthedocs.io/en/latest/connection/logging_in/oauth1_authentication.html#oauth1-authentication">OAuth1</a> and <a href="http://odoo-restapi.readthedocs.io/en/latest/connection/logging_in/oauth2_authentication.html#oauth2-authentication">OAuth2</a> protocols to authenticate 3rd party applications.<br/>
+                Webhooks are a useful tool for apps that want to execute code after a specific event happens on an Odoo, for example, after a warehouse manager creates a new product, updates a stock quantity for existing products or sales manager confirm the quotation.
+                <br/><br/>
+                Instead of telling your app to make an API call every X number of minutes to check if a specific event has occured on an Odoo, you can register webhooks, which send an HTTP request from the Odoo telling your app that the event has occurred. This uses many less API requests overall, allowing you to build more robust apps, and update your app instantly after a webhook is received.
+                <br>
+                Another, less-obvious, case for using webhooks is when you're dealing with data that isn't easily searchable through the Odoo API. For example, re-requesting an entire product catalog or order history would benefit from using webhooks since it requires a lot of API requests and takes a lot of time.
+
+                Think of it this way, if you would otherwise have to poll for a substantial amount of data, you should be using webhooks.
+            </p>
+            <h3 style="color: #696c75;font-family: Montserrat;font-weight: 600;text-align:center;font-size: 17px;opacity: 1;margin: 8px 0 16px;" class="oe_slogan">This module is compatible with</h3>
+            <div class="text-center mb-3">
+                <img src="Odoo_Editions_All.png" class="img-fluid mx-auto d-block" style="height: 50px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main tabination -->
+<section class="oe_container mt32">
+    <div class="row" style="max-width: 1540px; margin: 0 auto; border-radius: 15px;">
+        <ul role="tablist" class="nav nav-tabs justify-content-center" data-tabs="tabs" style="border-bottom: 1px solid #e3d7d7; width: 100%; background-color: unset; margin: 0 auto;">
+            <li class="nav-item" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px; background-color: #eee; margin: 5px; border-top-left-radius: 10px;">
+                <a
+                    href="#Keyfeatures"
+                    aria-controls="Keyfeatures"
+                    aria-bs-selected="true"
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    role="tab"
+                    id="keyfeatures-tab"
+                    style="
+                        color: #393a3e;
+                        font-family: Roboto;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        padding: 11px 20px;
+                        border: 1px solid #3e3f433b;
+                        border-top-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                    "
+                >
+                    Key Features
+                </a>
+            </li>
+            <li class="nav-item" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px; background-color: #eee; margin: 5px; border-top-left-radius: 10px;">
+                <a
+                    href="#user_guide"
+                    aria-controls="user_guide"
+                    aria-bs-selected="false"
+                    data-bs-toggle="tab"
+                    id="user-guide-tab"
+                    role="tab"
+                    class="nav-link"
+                    style="
+                        color: #393a3e;
+                        font-family: Roboto;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        padding: 11px 20px;
+                        border: 1px solid #3e3f433b;
+                        border-top-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                    "
+                >
+                    User Guide
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content container pt-3">
+            <!-- Key Features -->
+            <div class="tab-pane fade show active" id="Keyfeatures" aria-labelledby="keyfeatures-tab" role="tabpanel">
+                <section class="oe_container pb-5">
+                    <div class="mb32">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12" style="margin-top: 15px;">
+                                <div class="row" style="height: 100%; border-radius: 10px; padding: 10px 0px;">
+                                    <div class="col-md-3 col-3 d-flex align-items-center justify-content-end" style="float: left; margin-bottom: auto;">
+                                        <img class="img img-responsive" style="max-height: 100%; max-width: 100%; height: auto; width: 40px;" src="test.png" />
+                                    </div>
+                                    <div class="col-md-9 col-9" style="padding-left: 25px;">
+                                        <h3 class="mb0" style="font-family: Roboto; font-weight: 500; font-size: 22px;">Authentication</h3>
+                                        <p class="mt8" style="font-family: Roboto;">
+                                            Provides Authentication with both Oauth1 And Oauth2 protocols.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="margin-top: 15px;">
+                                <div class="row" style="height: 100%; border-radius: 10px; padding: 10px 0px;">
+                                    <div class="col-md-3 col-3 d-flex align-items-center justify-content-end" style="float: left; margin-bottom: auto;">
+                                        <img class="img img-responsive" style="max-height: 100%; max-width: 100%; height: auto; width: 40px;" src="test.png" />
+                                    </div>
+                                    <div class="col-md-9 col-9" style="padding-left: 25px;">
+                                        <h3 class="mb0" style="font-family: Roboto; font-weight: 500; font-size: 22px;">Send Created Record</h3>
+                                        <p class="mt8" style="font-family: Roboto;">
+                                            Send the record immediately when record is created.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="margin-top: 15px;">
+                                <div class="row" style="height: 100%; border-radius: 10px; padding: 10px 0px;">
+                                    <div class="col-md-3 col-3 d-flex align-items-center justify-content-end" style="float: left; margin-bottom: auto;">
+                                        <img class="img img-responsive" style="max-height: 100%; max-width: 100%; height: auto; width: 40px;" src="test.png" />
+                                    </div>
+                                    <div class="col-md-9 col-9" style="padding-left: 25px;">
+                                        <h3 class="mb0" style="font-family: Roboto; font-weight: 500; font-size: 22px;">Send Updated record</h3>
+                                        <p class="mt8" style="font-family: Roboto;">
+                                            Send the record immediately when record is created.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="margin-top: 15px;">
+                                <div class="row" style="height: 100%; border-radius: 10px; padding: 10px 0px;">
+                                    <div class="col-md-3 col-3 d-flex align-items-center justify-content-end" style="float: left; margin-bottom: auto;">
+                                        <img class="img img-responsive" style="max-height: 100%; max-width: 100%; height: auto; width: 40px;" src="test.png" />
+                                    </div>
+                                    <div class="col-md-9 col-9" style="padding-left: 25px;">
+                                        <h3 class="mb0" style="font-family: Roboto; font-weight: 500; font-size: 22px;">Send Deleted record</h3>
+                                        <p class="mt8" style="font-family: Roboto;">
+                                            Send the record immediately when record is deleted.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="margin-top: 15px;">
+                                <div class="row" style="height: 100%; border-radius: 10px; padding: 10px 0px;">
+                                    <div class="col-md-3 col-3 d-flex align-items-center justify-content-end" style="float: left; margin-bottom: auto;">
+                                        <img class="img img-responsive" style="max-height: 100%; max-width: 100%; height: auto; width: 40px;" src="test.png" />
+                                    </div>
+                                    <div class="col-md-9 col-9" style="padding-left: 25px;">
+                                        <h3 class="mb0" style="font-family: Roboto; font-weight: 500; font-size: 22px;">Support Formats</h3>
+                                        <p class="mt8" style="font-family: Roboto;">
+                                            Supports JSON and XML format to send the record.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="margin-top: 15px;">
+                                <div class="row" style="height: 100%; border-radius: 10px; padding: 10px 0px;">
+                                    <div class="col-md-3 col-3 d-flex align-items-center justify-content-end" style="float: left; margin-bottom: auto;">
+                                        <img class="img img-responsive" style="max-height: 100%; max-width: 100%; height: auto; width: 40px;" src="test.png" />
+                                    </div>
+                                    <div class="col-md-9 col-9" style="padding-left: 25px;">
+                                        <h3 class="mb0" style="font-family: Roboto; font-weight: 500; font-size: 22px;">Filtering Records</h3>
+                                        <p class="mt8" style="font-family: Roboto;">
+                                            Trigger only if operations are performed on certain record.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="margin-top: 15px;">
+                                <div class="row" style="height: 100%; border-radius: 10px; padding: 10px 0px;">
+                                    <div class="col-md-3 col-3 d-flex align-items-center justify-content-end" style="float: left; margin-bottom: auto;">
+                                        <img class="img img-responsive" style="max-height: 100%; max-width: 100%; height: auto; width: 40px;" src="test.png" />
+                                    </div>
+                                    <div class="col-md-9 col-9" style="padding-left: 25px;">
+                                        <h3 class="mb0" style="font-family: Roboto; font-weight: 500; font-size: 22px;">Filtering Fields</h3>
+                                        <p class="mt8" style="font-family: Roboto;">
+                                            Trigger only certain fields when record is updated.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- User Guide -->
+            <div aria-labelledby="user-guide-tab" class="tab-pane fade show" role="tabpanel" id="user_guide">
+                <!-- User Guide Inner Tab -->
+                <div class="row">
+                    <ul role="tablist" class="nav nav-tabs justify-content-center align-content-start col-12 col-md-2" data-tabs="tabs" style="padding-left: 15px; text-transform: capitalize; font-size: 18px; background-color: transparent;">
+                        <li style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;background-color: #eee;margin-bottom: 10px;border-top-left-radius: 10px;" class="nav-item w-100">
+                            <a
+                                href="#odoo_version"
+                                aria-controls="odoo_version"
+                                aria-bs-selected="true"
+                                class="nav-link active"
+                                data-bs-toggle="tab"
+                                role="tab"
+                                id="odoo_version-tab"
+                                style="
+                                    color: #393a3e;
+                                    font-family: Roboto;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    letter-spacing: 1px;
+                                    padding: 11px 20px;
+                                    border: 1px solid #3e3f433b;
+                                    border-top-right-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                "
+                            >
+                                Webhook Endpoints
+                            </a>
+                        </li>
+                        <li style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;background-color: #eee;margin-bottom: 10px;border-top-left-radius: 10px;" class="nav-item w-100">
+                            <a
+                                href="#Log_in"
+                                aria-controls="Log_in"
+                                aria-bs-selected="false"
+                                data-bs-toggle="tab"
+                                id="Log_in-tab"
+                                role="tab"
+                                class="nav-link"
+                                style="
+                                    color: #393a3e;
+                                    font-family: Roboto;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    letter-spacing: 1px;
+                                    padding: 11px 20px;
+                                    border: 1px solid #3e3f433b;
+                                    border-top-right-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                "
+                            >
+                                Receive and Respond webhook
+                            </a>
+                        </li>
+                        <li style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;background-color: #eee;margin-bottom: 10px;border-top-left-radius: 10px;" class="nav-item w-100">
+                            <a
+                                href="#Call_method"
+                                aria-controls="Call_method"
+                                aria-bs-selected="false"
+                                data-bs-toggle="tab"
+                                id="Call_method-tab"
+                                role="tab"
+                                class="nav-link"
+                                style="
+                                    color: #393a3e;
+                                    font-family: Roboto;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    letter-spacing: 1px;
+                                    padding: 11px 20px;
+                                    border: 1px solid #3e3f433b;
+                                    border-top-right-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                "
+                            >
+                                Dependencies
+                            </a>
+                        </li>
+                        <li style="border-top-right-radius: 20px;border-bottom-left-radius: 20px;background-color: #eee;margin-bottom: 10px;border-top-left-radius: 10px;" class="nav-item w-100">
+                            <a
+                                href="#reference_guide"
+                                aria-controls="reference_guide"
+                                aria-bs-selected="false"
+                                data-bs-toggle="tab"
+                                id="reference_guide-tab"
+                                role="tab"
+                                class="nav-link"
+                                style="
+                                    color: #393a3e;
+                                    font-family: Roboto;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    letter-spacing: 1px;
+                                    padding: 11px 20px;
+                                    border: 1px solid #3e3f433b;
+                                    border-top-right-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                "
+                            >
+                                Reference Guide
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- User Guide Inner Tab content-->
+                    <div class="tab-content h-100 col-10 col-md-10">
+                        <div class="tab-pane fade show active" aria-labelledby="odoo_version-tab" role="tabpanel" id="odoo_version">
+                            <div class="container" style="border-bottom: 1px solid #dadee2;">
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Get a Webhooks
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Using the following request, user can get the existing webhooks.
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #6EBE5C; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">GET
+                                                                </h5>
+                                                                /restapi/1.0/webhooks
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Get Particular Webhooks
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Get a list of webhooks of particular ids.
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #6EBE5C; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">GET
+                                                                </h5>
+                                                                /restapi/1.0/webhooks?ids={comma_separated_ids}
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Get filtered webhooks
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Get a list of specific webhooks using domain filter
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #6EBE5C; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">GET
+                                                                </h5>
+                                                                /restapi/1.0/webhooks/?domain={comma_separated_list_of_args}
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Get Count of Webhook
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Get a total count of webhooks
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #6EBE5C; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">GET
+                                                                </h5>
+                                                                /restapi/1.0/webhooks/count
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Create Webhook using RestApi
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Create a new webhook
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #5f5e97; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">POST
+                                                                </h5>
+                                                                /restapi/1.0/webhooks?vals={values_for_the_object's_fields}
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Update a single webhook using RestApi
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Update a single record using RestApi
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #723679; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">PUT
+                                                                </h5>
+                                                                /restapi/1.0/webhooks/{id}?vals={fields_and_values_to_update}
+                                                            </span>
+                                                        </h3>
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Update multiple records using RestApi
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #723679; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">PUT
+                                                                </h5>
+                                                                /restapi/1.0/webhooks?ids={comma_separated_ids}&vals={fields_and_values_to_update}
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Delete Webhook using RestApi
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Delete a single Webhook from the database
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #d40434; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">DELETE
+                                                                </h5>
+                                                                /restapi/1.0/webhooks/{id}
+                                                            </span>
+                                                        </h3>
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Delete multiple Webhooks from the database
+                                                            </span>
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <h5 style="background-color: #d40434; color: white; padding: 5px 10px 3px 10px; text-transform: uppercase; display: inline-block; margin: 0; border-bottom-left-radius: 12px; border-top-left-radius: 12px;">DELETE
+                                                                </h5>
+                                                                /restapi/1.0/webhooks?ids={comma_separated_ids}
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div aria-labelledby="Log_in-tab" class="tab-pane fade show" role="tabpanel" id="Log_in">
+                            <div class="container" style="border-bottom: 1px solid #dadee2;">
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Receive a webhook
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Once you register a webhook URL with Odoo, it will issue a HTTP POST request to the URL specified every time that event occurs. The request's POST parameters will contain XML/JSON data relevant to the event that triggered the request.<br/><br/>
+
+                                                                The trouble with testing your webhooks is that you need a publicly visible URL to handle them.<br/><br/>
+
+                                                                There are a couple of tools that make working with webhooks during development much easier such as <a href="https://requestb.in">RequestBin</a>, <a href="https://pagekite.net">Pagekite</a> and <a href="https://ngrok.com">ngrok</a>.
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Respond to a webhook
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Your webhook acknowledges that it received data by sending a 200 OK response. Any response outside of the 200 range will let Odoo know that you did not receive your webhook. Odoo has implemented a configurable timeout period and a retry period for subscriptions under <strong>Settings > General Settings > Webhook Configuration.</strong><br/>
+                                                            </span>
+                                                            <br/>
+                                                            <span style="font-size: 18px">
+                                                                We wait for a response to each request till configured timeout period (default is 5 seconds), and if there isn't one or we get an error, we retry the connection for configured retry periods (default is 5 times). A webhook request job will be deleted if there are N number of consecutive failures for the exact same webhook (N being a configured retry period, default is 5 times). You should monitor the admin of your <a href="http://odoo-webhook.readthedocs.io/en/latest/receive_webhook.html#webhook-tool">webhook tool</a> for failing webhooks.<br/>
+                                                            </span>
+                                                            <br/>
+                                                            <span style="font-size: 18px">
+                                                                If you're receiving an Odoo webhook, the most important thing to do is respond quickly. There have been several historical occurrences of apps that do some lengthy processing when they receive a webhook that triggers the timeout. This has led to situations where webhooks were removed from functioning apps.<br/>
+
+                                                                To make sure that apps don't accidentally run over the timeout limit, we now recommend that apps defer processing until after the response has been sent.
+                                                            </span>
+                                                            <br/>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div aria-labelledby="Call_method-tab" class="tab-pane fade show" role="tabpanel" id="Call_method">
+                            <div class="container" style="border-bottom: 1px solid #dadee2;">
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        This module is depend on RestApi module, which is also available on Odoo App Store, Here are links for:<br/>
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <br/><br/>
+                                                            <span style="font-size: 18px">
+                                                                <a href="https://www.odoo.com/apps/modules/9.0/restapi/">Odoo REST API (Version 9.0 Community & Enterprise)</a><br/>
+                                                                <a href="https://www.odoo.com/apps/modules/10.0/restapi/">Odoo REST API (Version 10.0 Community & Enterprise)</a><br/>
+                                                                <a href="https://www.odoo.com/apps/modules/11.0/restapi/">Odoo REST API (Version 11.0 Community & Enterprise)</a><br/>
+                                                                <a href="https://www.odoo.com/apps/modules/12.0/restapi/">Odoo REST API (Version 12.0 Community & Enterprise)</a><br/>
+                                                                <a href="https://www.odoo.com/apps/modules/13.0/restapi/">Odoo REST API (Version 13.0 Community & Enterprise)</a><br/>
+                                                                <a href="https://www.odoo.com/apps/modules/14.0/restapi/">Odoo REST API (Version 14.0 Community & Enterprise)</a><br/>
+                                                                <a href="https://www.odoo.com/apps/modules/15.0/restapi/">Odoo REST API (Version 15.0 Community & Enterprise)</a><br/>
+                                                                <a href="https://www.odoo.com/apps/modules/16.0/restapi/">Odoo REST API (Version 16.0 Community & Enterprise)</a><br/><br/>
+                                                            </span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                
+                            </div>
+                        </div>
+                        <div aria-labelledby="reference_guide-tab" class="tab-pane fade show" role="tabpanel" id="reference_guide">
+                            <div class="container" style="border-bottom: 1px solid #dadee2;">
+                                <table style="width: 100%; margin: 0 auto 35px; position: relative;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="shadow-sm" style="padding: 0px 30px 0px 30px; border: none; border-radius: 18px; background: white; border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                                                <div style="width: 100%; float: left;" class="floatL YearDiv">
+                                                    <div class="YearText" style="width: 100%; font-size: 25px; font-weight: 600; color: #875a7b; height: 55px;">
+                                                        Webhook Quick Reference Guide
+                                                    </div>
+                                                    <div class="slide_card" style="width: 100%; border: none; border-radius: 18px; background: white;">
+                                                        <h3 style="padding-left: 20px; font-family: Roboto; font-weight: 300; color: #444549; background: white; font-size: 16px; margin-bottom: 18px;">
+                                                            <span style="font-size: 18px">
+                                                                Consider following link for a quick reference guide to use the odoo webhooks:
+                                                                <br/>
+                                                                https://synconics.gitbook.io/webhook/ 
+                                                            </span>
+                                                            <br/><br/>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Content -->
+        </div>
+    </div>
+</section>
+
+<!-- Suggested product -->
+<section class="oe_container"> 
+    <div class="content">
+        <div class="heading" style="font-family: Roboto;letter-spacing: .02em;font-size: 2.86rem;text-align: center;color: #4a4d52;">Suggested Products</div>
+        <div class="row justify-content-center" style="padding: 10px 0;margin: 0 auto;max-width: 1200px;">
+            <div class="mx-auto d-flex justify-content-center flex-column align-items-center col-md-4 col-12" style="padding: 20px;position: relative;">
+                <div style="width: 100%;height: 100%;" class="prod-content-container d-flex flex-column justify-content-center position-relative">
+                    <div style="height: 185px;width: 100%;" class="icon-container d-flex justify-content-center flex-column"><a href="https://apps.odoo.com/apps/modules/15.0/sync_fiscal_year/" target="_blank" style="height: 100%;width: 100%;"><img style="border-radius: 18px;width: 100%;max-width: 100%;max-height: 100%;height: auto;" alt="" class="img img-fluid shadow-sm" src="sync_fiscal_year.png" /></a></div>
+                </div>
+            </div>
+            <div class="mx-auto d-flex justify-content-center flex-column align-items-center col-md-4 col-12" style="padding: 20px;position: relative;">
+                <div style="width: 100%;height: 100%;" class="prod-content-container d-flex flex-column justify-content-center position-relative">
+                    <div style="height: 185px;width: 100%;" class="icon-container d-flex justify-content-center flex-column"><a href="https://apps.odoo.com/apps/modules/16.0/restapi/" target="_blank" style="height: 100%;width: 100%;"><img style="border-radius: 18px;width: 100%;max-width: 100%;max-height: 100%;height: auto;" alt="" class="img img-fluid shadow-sm" src="restapi.png" /></a></div>
+                </div>
+            </div>
+            <div class="mx-auto d-flex justify-content-center flex-column align-items-center col-md-4 col-12" style="padding: 20px;position: relative;">
+                <div style="width: 100%;height: 100%;" class="prod-content-container d-flex flex-column justify-content-center position-relative">
+                    <div style="height: 185px;width: 100%;" class="icon-container d-flex justify-content-center flex-column"><a href="https://apps.odoo.com/apps/modules/15.0/sync_google_contact/" target="_blank" style="height: 100%;width: 100%;"><img style="border-radius: 18px;width: 100%;max-width: 100%;max-height: 100%;height: auto;" alt="" class="img img-fluid shadow-sm" src="sync_google_contact.png" /></a></div>
+                </div>
+            </div>
+            <div class="mx-auto d-flex justify-content-center flex-column align-items-center col-md-4 col-12" style="padding: 20px;position: relative;">
+                <div style="width: 100%;height: 100%;" class="prod-content-container d-flex flex-column justify-content-center position-relative">
+                    <div style="height: 185px;width: 100%;" class="icon-container d-flex justify-content-center flex-column"><a href="https://apps.odoo.com/apps/modules/15.0/adv_payment_credit_limit/" target="_blank" style="height: 100%;width: 100%;"><img style="border-radius: 18px;width: 100%;max-width: 100%;max-height: 100%;height: auto;" alt="" class="img img-fluid shadow-sm" src="adv_payment_credit_limit.png" /></a></div>
+                </div>
+            </div>
+            <div class="mx-auto d-flex justify-content-center flex-column align-items-center col-md-4 col-12" style="padding: 20px;position: relative;">
+                <div style="width: 100%;height: 100%;" class="prod-content-container d-flex flex-column justify-content-center position-relative">
+                    <div style="height: 185px;width: 100%;" class="icon-container d-flex justify-content-center flex-column"><a href="https://apps.odoo.com/apps/modules/15.0/sync_payment_braintree/" target="_blank" style="height: 100%;width: 100%;"><img style="border-radius: 18px;width: 100%;max-width: 100%;max-height: 100%;height: auto;" alt="" class="img img-fluid shadow-sm" src="sync_payment_braintree.png" /></a></div>
+                </div>
+            </div>
+            <div class="mx-auto d-flex justify-content-center flex-column align-items-center col-md-4 col-12" style="padding: 20px;position: relative;">
+                <div style="width: 100%;height: 100%;" class="prod-content-container d-flex flex-column justify-content-center position-relative">
+                    <div style="height: 185px;width: 100%;" class="icon-container d-flex justify-content-center flex-column"><a href="https://apps.odoo.com/apps/modules/15.0/sync_global_search/" target="_blank" style="height: 100%;width: 100%;"><img style="border-radius: 18px;width: 100%;max-width: 100%;max-height: 100%;height: auto;" alt="" class="img img-fluid shadow-sm" src="sync_global_search.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Don't Change this code -->
+<section id="service" style="padding-bottom:10px; padding-top:10px">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="mr-3" style="display: inline-block;background-color: #3e3f43;border-radius: 30px;">
+                <a class="text-center" style="padding-left:1.5rem; padding-right:1.5rem; color:#091E42; font-family: 'Roboto-Regular'; font-weight:600; font-size:15px; margin:0 auto" href="https://apps.odoo.com/apps/modules/browse/page/1?repo_maintainer_id=127038" target="_blank"> <span class="fa fa-cube mr-2" style="height:50px; line-height:50px; color:#fff; font-weight:600"></span>
+                <span class="align-middle" style="height:50px; line-height:50px; color:#fff; font-weight:600"> Our Apps</span>
+                </a>
+            </div>
+            <div style="display: inline-block;background-color: #3e3f43;border-radius: 30px;">
+                <a class="text-center" style="padding-left:1.5rem; padding-right:1.5rem; color:#091E42; font-family: 'Roboto-Regular'; font-weight:600; font-size:15px; margin:0 auto" href="https://apps.odoo.com/apps/themes/browse/page/1?repo_maintainer_id=127038" target="_blank"> <span class="fa fa-paint-brush mr-2" style="height:50px; line-height:50px; color:#fff; font-weight:600"></span>
+                    <span class="align-middle" style="height:50px; line-height:50px; color:#fff; font-weight:600"> Our Themes</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Don't Change this code -->
+<section class="mt32" style="padding-bottom:10px; padding-top:10px">
+    <div class="container">
+        <div class="text-center pb-2" style="border-bottom: 1px solid #e3d7d7;">
+            <h2 style="color: #4a4d57;font-size: 2.86rem;font-weight: 400;text-transform: initial;line-height: 1.2;">Terms & Conditions</h2>
+        </div>
+    <div>
+    <div style="border: 0px;">
+        <ul class="card-header pl-3 bg-white" style="border:none;padding-bottom: 0.3rem;padding-top: 0.3rem;">
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">All the apps are to be purchased separately, for individual versions and individual edition.
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">One month free bug support period will be offered pertaining to any one server used, testing or live.
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">Synconics is not responsible for installation or updating of the module on any of your server.
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">If an error appears in our app due to other custom modules installed in your system or if Odoo base source code is not updated on your system, to make it compatible with your source code, we'll charge you for our efforts to resolve those errors and make the module compatible with your source code.
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">Please refer the document for configuration. If any support is needed for module configuration, installation, updating or any help is needed, it will be considered in paid support.
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">Please note that you are not allowed to distribute or resell this module after purchase.
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">This module is tested and working on Odoo vanilla with Ubuntu OS.
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">Support services will be provided from Monday to Friday, 10:30 AM to 7 PM IST (Indian Standard Time).
+            </li>
+            <li class="pr-5" style="margin: 0;font-family:Roboto;font-weight: 300;color: #646464;background: white;font-size: 14px;">Support will not be provided during Indian public holidays or company holidays.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Don't Change this code -->
+<section class="oe_container mt32">
+    <div class="Website-id">
+        <div class="Website-banner" style="box-shadow-sm: 1px 7px 11px 6px rgb(0 0 0 / 8%), -8px 8px 15px 0 rgb(120 120 120 / 4%), 3px 3px 30px 0 rgb(0 0 0 / 4%) !important">
+            <div class="banner-item" t-if="erp.banner">
+                <div class="item"
+                     style="background-repeat: no-repeat;background-size: cover;">
+                    <img src="main_banner.png" class="img-fluid mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Don't Change this code -->
+<section id="contact" class="oe_container mt32">
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <div class="Section__headline--ZCk1K fontRegular"><span style="font-size: 2.86rem;color: #4a4d52;">Questions? Get in touch!</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="Section">
+                    <div class="contactUsInPage">
+                        <div>
+                            <div class="container">
+                                <div class="row justify-content-center" style="margin-top: 3.25rem;">
+                                    <div class="col-md-4">
+                                        <div class="styles" style="align-items: center;text-align: center;height: 100%;font-family: 'Roboto-Regular';">
+                                            <div class="title" style="margin-top: 2rem;font-size: 2.2rem;line-height: 1.2;font-weight: 400;text-transform: none;text-align: center;color: #4a4d52;">Call us at</div>
+                                            <div class="textInSection" style="color: #4a4d52;margin-top: 2rem;font-size: 1rem;text-align: center;">India</div>
+                                            <div class="phoneInSection" style="font-size: 2.2rem;line-height: 1.2;color: #007db8;">
+                                                <a href="tel:+919426864274" target="_self" class="d-flex justify-content-center align-items-center" style="color: #007db8;"><i class="fa fa-whatsapp mr-2" style="color: #6cbb65;"></i><div class="fontMedium">+91 94268 64274</div></a>
+                                            </div>
+                                            <div>
+                                                <img style="width: 85px;height: 85px;max-width: 85px;max-height: 85px;" src="whatsapp_barcode.png" alt="Contact Us" />
+                                            </div>
+                                            <div class="textInSection" style="color: #4a4d52;font-size: 1rem;text-align: center;">Scan QR to connect on whatsapp.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 border-left">
+                                    </div>
+                                    <div class="col-md-6 d-flex justify-content-center flex-column mt-4">
+                                        <div class="row align-items-center mb-3">
+                                            <a style="width: 100%;display: flex;align-items: center;color: #666666;" href="skype:synconics.technologies?chat" target="_self" rel="nofollow">
+                                                <div class="col-md-2 col-2">
+                                                    <div class="imageInSection">
+                                                        <div class="wrapper">
+                                                            <div class="LazyLoad is-visible">
+                                                                    <img style="width: 55px;height: 55px;max-width: 55px;max-height: 55px;" src="skype.png" alt="Chat Now" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="color: #4a4d52;" class="col-md-9 pl-5">
+                                                    <strong>Chat Now</strong>
+                                                    <div>Get live help and chat with an Synconics representative.</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row align-items-center mb-3">
+                                            <a style="width: 100%;display: flex;align-items: center;color: #666666;" rel="nofollow">
+                                                <div class="col-md-2 col-2">
+                                                    <div class="imageInSection">
+                                                        <div class="wrapper">
+                                                            <div>
+                                                                <img style="width: 55px;height: 55px;max-width: 55px;max-height: 55px;" src="whatsapp.png" alt="Contact Us" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="color: #4a4d52;" class="col-md-9 pl-5">
+                                                    <strong>Chat Now</strong>     
+                                                    <div style="color: #2f7eb8;">https://bit.ly/3zyEEQB</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row align-items-center mb-3">
+                                            <a target="_self" style="width: 100%;display: flex;align-items: center;color: #666666;" href="mailto:contact@synconics.com?subject= Product Support." rel="nofollow">
+                                                <div class="col-md-2 col-2">
+                                                    <div class="imageInSection">
+                                                        <div class="wrapper">
+                                                            <div class="LazyLoad is-visible">
+                                                                    <img style="width: 55px;height: 55px;max-width: 55px;max-height: 55px;" src="gmail_icon.png" alt="Contact Us" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="color: #4a4d52;" class="col-md-9 pl-5">
+                                                    <strong>Contact Us</strong>
+                                                    <div>E-mail us with comments, questions or feedback.</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
